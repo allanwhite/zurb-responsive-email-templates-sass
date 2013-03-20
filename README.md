@@ -1,5 +1,7 @@
-I've cloned this handy repo of Zurb's responsive email templates; the only thing I'm adding is [Jade](http://jade-lang.com/) versions of the HTML files. I find that an HTML pre-processor helps a great deal when managing complex tables, and there's lots of nice output optimizations (great for email design).
-\- AllanWhite
+I've cloned this handy repo of Zurb's responsive email templates; the only thing I'm adding is [Jade](http://jade-lang.com/) versions of the HTML files. 
+
+I find that an HTML pre-processor helps a great deal when managing complex tables, and there's lots of nice output optimizations (great for email design).
+\- AllanWhite, with thanks to JmauPetit.
 
 # Zurb Responsive Email Templates with Sass & compass support
 
