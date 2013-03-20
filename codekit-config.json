@@ -95,15 +95,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
-    "\/templates\/sidebar-hero.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/templates\/sidebar-hero.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/jade\/hero.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -114,6 +105,15 @@
       "compileDebug" : 0,
       "outputAbbreviatedPath" : "\/templates\/hero.html",
       "fileType" : 512
+    },
+    "\/templates\/sidebar-hero.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/templates\/sidebar-hero.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/templates\/basic.html" : {
       "ignoreWasSetByUser" : 0,
