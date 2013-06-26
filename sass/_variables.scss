@@ -1,0 +1,43 @@
+// ==================== COLOR THEME =======================
+
+// Blue & red duotone - 'Love Alaska' theme
+$theme-color-primary:       #2b4f66; // 
+$theme-color-primary-light: #4980ac; // pale 
+$theme-color-med:       	adjust-color($theme-color-primary, $lightness: 20%, $saturation: 0%);
+$theme-color-primary-alt:   #1c5ca0; // deep 
+$theme-color-alt:           #1B3142; // dark 
+$theme-color-page:          #fff;// white - used in many variables that need white; will tint everything! 
+$theme-color-compl:         #a50004; // bright red
+$theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
+$theme-color-links:         adjust-color($theme-color-compl, $lightness: 5%, $saturation: 20%); // 
+
+$trans:           rgba(0, 0, 0, 0);
+$trans-black:         rgba(#000, 0.6);
+// ==================== ++ =======================
+
+// We use these as default colors throughout
+$primary-color:             $theme-color-primary;
+$secondary-color:           $theme-color-page-tint; // light, like gray
+$alert-color:               adjust-color($theme-color-compl, $lightness: 10%, $saturation: 40%);
+$success-color:             adjust-color($theme-color-primary, $lightness: 10%, $saturation: 40%);
+
+
+//
+$fontStackReg:          "MuseoSans", Helvetica, Arial, sans-serif !default;
+$fontStackBold:         "MuseoSans", Helvetica, Arial, sans-serif;
+$fontStackBoldItal:     $fontStackBold;
+$fontStackItal:         "MuseoSans", Helvetica, Arial, sans-serif;
+$fontStackBody:         $fontStackReg;
+$fontStackLight:        $fontStackReg;
+$fontStackQuote:        $fontStackLight;
+
+$sansFontFamily:        $fontStackReg;
+$serifFontFamily:       "MuseoSlab", Georgia, serif !default;
+$monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+// We use these to control various global styles
+$body-bg: $theme-color-page;
+$body-font-color: rgb(44, 43, 41);
+$body-font-family: $fontStackReg;
+$body-font-weight: normal;
+$body-font-style: normal;

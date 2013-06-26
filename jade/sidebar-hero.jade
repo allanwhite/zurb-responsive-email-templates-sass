@@ -1,19 +1,33 @@
+
+//-
+  $theme-color-primary:       #2b4f66; // 
+  $theme-color-primary-light: #4980ac; // pale 
+  $theme-color-med:         adjust-color($theme-color-primary, $lightness: 20%, $saturation: 0%);
+  $theme-color-primary-alt:   #1c5ca0; // deep 
+  $theme-color-alt:           #1B3142; // dark 
+  $theme-color-page:          #fff;// white - used in many variables that need white; will tint everything! 
+  $theme-color-compl:         #a50004; // bright red
+  $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
+  $theme-color-links:         adjust-color($theme-color-compl, $lightness: 5%, $saturation: 20%); // 
+c = {primary: '#1e5a82', light: '#4980ac', med: '#71bcf6', dark: '#193851', page: '#fff', links: '#6d0008', header: '#fff', bg: '#31373b'}
+//- c.page = 
+
 !!! transitional
 html
   head
     meta(name='viewport', content='width=device-width')
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
-    title ZURBemails
-    include ../templates/stylesheets/email.css
-    //link(rel='stylesheet', type='text/css', href='stylesheets/email.css')
-    body(bgcolor='#FFFFFF', topmargin='0', leftmargin='0', marginheight='0', marginwidth='0')
+    title Love Alaska
+    //- include ../templates/stylesheets/email-sidebar.css
+    link(rel='stylesheet', type='text/css', href='stylesheets/email-sidebar.css')
+    body(bgcolor=c.bg, topmargin='0', leftmargin='0', marginheight='0', marginwidth='0')
       // ------------- HEADER --------------------------
-      table.head-wrap(bgcolor='#999999')
+      table.head-wrap(bgcolor=c.header)
         tr
           td
           td.header.container
             .content
-              table(bgcolor='#999999')
+              table(bgcolor=c.header)
                 tr
                   td
                     img(src='http://placehold.it/200x50/')
@@ -24,7 +38,7 @@ html
       table.body-wrap
         tr
           td
-          td.container(bgcolor='#FFFFFF')
+          td.container(bgcolor=c.page)
             // content 
             .content
               table
@@ -92,17 +106,17 @@ html
                             table(align='left', width='100%')
                               tr
                                 td
-                                  h6. Connect with Us:
-                                  p.
+                                  h6 Connect with Us:
+                                  p
                                     a.soc-btn.fb(href='#') Facebook
                                     a.soc-btn.tw(href='#') Twitter
                                     a.soc-btn.gp(href='#') Google+
-                                  h6. Contact Info:
+                                  h6 Contact Info:
                                   p
-                                    | Phone:
+                                    | Phone: 
                                     strong 408.341.0600
                                     br
-                                    | Email:
+                                    | Email: 
                                     strong
                                       a(href='emailto:hseldon@trantor.com') hseldon@trantor.com
                       //social & contact 
