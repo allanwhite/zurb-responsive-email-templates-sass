@@ -1,4 +1,17 @@
 // ==================== COLOR THEME =======================
+//c = {primary: '#1e5a82', light: '#4980ac', med: '#71bcf6', dark: '#193851', page: '#fff', links: '#6d0008', header: '#fff', bg: '#31373b'}
+$c-primary: #1e5a82;
+$c-light:	#4980ac;
+$c-med:		#71bcf6;
+$c-dark: 	#193851;
+$c-page:	#fff;
+$c-links:	#6d0008;
+$c-header:	#fff;
+$c-bg:		#31373b;
+
+$box-width: 900px;
+$col-width: $box-width / 3;
+
 
 // Blue & red duotone - 'Love Alaska' theme
 $theme-color-primary:       #2b4f66; // 

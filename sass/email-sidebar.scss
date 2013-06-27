@@ -21,7 +21,7 @@ img {
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-  width: 100%!important;
+  width: 100% !important;
   height: 100%;
 }
 
@@ -30,13 +30,13 @@ body {
 ------------------------------------- */
 
 a {
-  color: #2BA6CB;
+  color: $c-links;
 }
 
 .btn {
   text-decoration: none;
-  color: #FFF;
-  background-color: #666;
+  color: $c-page;
+  background-color: $c-links;
   padding: 10px 16px;
   font-weight: bold;
   margin-right: 10px;
@@ -53,7 +53,7 @@ p.callout {
 
 .callout a {
   font-weight: bold;
-  color: #2BA6CB;
+  color: $c-links;
 }
 
 table.social {
@@ -226,7 +226,7 @@ ul {
         /*  text-align:center; */
         cursor: pointer;
         border-bottom: 1px solid #777777;
-        border-top: 1px solid #FFFFFF;
+        border-top: 1px solid $c-page;
         display: block;
         margin: 0;
         &.last {
@@ -253,7 +253,7 @@ ul {
 
 .container {
   display: block!important;
-  max-width: 600px!important;
+  max-width: $box-width !important;
   margin: 0 auto!important;
   /* makes it centered */
   clear: both!important;
@@ -263,7 +263,7 @@ ul {
 
 .content {
   padding: 15px;
-  max-width: 600px;
+  max-width: $box-width;
   margin: 0 auto;
   display: block;
   table {
@@ -276,17 +276,20 @@ ul {
 /* Odds and ends */
 
 .column {
-  width: 300px;
+  width: $col-width;
   float: left;
   tr td {
     padding: 15px;
   }
 }
+.span-2{
+  width: $col-width * 2;
+}
 
 .column-wrap {
   padding: 0!important;
   margin: 0 auto;
-  max-width: 600px!important;
+  max-width: $box-width !important;
 }
 
 .column table {
@@ -294,8 +297,8 @@ ul {
 }
 
 .social .column {
-  width: 280px;
-  min-width: 279px;
+  width: $col-width;
+  min-width: $col-width - 1;
   float: left;
 }
 
@@ -317,7 +320,7 @@ ul {
         For clients that support media queries.
         Nothing fancy.
 -------------------------------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $box-width ) {
   a[class="btn"] {
     display: block!important;
     margin-bottom: 10px!important;
