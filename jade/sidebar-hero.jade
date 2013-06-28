@@ -9,7 +9,7 @@
   $theme-color-compl:         #a50004; // bright red
   $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
   $theme-color-links:         adjust-color($theme-color-compl, $lightness: 5%, $saturation: 20%); // 
-c = {primary: '#1e5a82', light: '#4980ac', med: '#71bcf6', dark: '#193851', page: '#fff', links: '#6d0008', header: '#fff', bg: '#31373b'}
+c = {primary: '#1e5a82', light: '#4980ac', med: '#71bcf6', dark: '#193851', text: '#000', page: '#fff', links: '#6d0008', header: '#fff', bg: '#31373b'}
 //- c.page = 
 
 !!! transitional
@@ -18,34 +18,32 @@ html
     meta(name='viewport', content='width=device-width')
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     title Love Alaska
-    include ../templates/stylesheets/email-sidebar.css
-    //- link(rel='stylesheet', type='text/css', href='stylesheets/email-sidebar.css')
+    //- include ../templates/stylesheets/email-sidebar.css
+    link(rel='stylesheet', type='text/css', href='stylesheets/email-sidebar.css')
     body(bgcolor=c.bg, topmargin='0', leftmargin='0', marginheight='0', marginwidth='0')
       // ------------- HEADER --------------------------
-      table.head-wrap(bgcolor=c.header)
+      table.head-wrap(bgcolor=c.bg, cellspacing=0, cellpadding=0)
         tr
-          td
+          //- td
           td.header.container
             .content
-              table(bgcolor=c.header)
+              table(bgcolor=c.bg, cellspacing=0, cellpadding=0)
                 tr
                   td
-                    img(src='http://placehold.it/200x50/')
-                  td(align='right')
-                    h6.collapse Sidebar Hero
-          td
+                    img(src='http://placehold.it/900x300/')
+          //- td
       // -------- BODY ----------------------------
-      table.body-wrap
+      table.body-wrap(cellspacing=0, cellpadding=0)
         tr
           td
           td.container(bgcolor=c.page)
             // content 
-            .content
+            .content.lead
               table
                 tr
                   td
-                    h1 Welcome, Mr. User
-                    p.lead
+                    h1 Greetings, programs!
+                    p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
                     //
                        A Real Hero (and a real human being) 
@@ -61,10 +59,11 @@ html
                     //Callout Panel 
             // COLUMN WRAP 
             .column-wrap
-              .column.span-2
+              .column.column-left
                 table(align='left')
                   tr
                     td
+                      h2 Here's an article headline
                       p
                         | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.
                       p
@@ -72,7 +71,7 @@ html
                       p
                         | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.
                       a.btn Click Here »
-              .column
+              .column.column-right
                 table(align='left')
                   tr
                     td

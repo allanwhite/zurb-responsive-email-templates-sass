@@ -1,12 +1,15 @@
 @import "_variables";
+// @import "_fonts";
 /* -------------------------------------
         GLOBAL
 ------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,300italic,700,700italic);
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Trebuchet, sans-serif;
+  font-size: $basefont;
 }
 
 img {
@@ -46,13 +49,16 @@ a {
 }
 
 p.callout {
-  padding: 15px;
+  padding: $basepad * 0.7;
   background-color: #ECF8FF;
-  margin-bottom: 15px;
+  margin-bottom: $basepad * 0.7;
 }
 
 .callout a {
-  font-weight: bold;
+  font:{
+    weight: bold;
+    size: $basefont * 1.5;
+  }
   color: $c-links;
 }
 
@@ -66,7 +72,7 @@ table.social {
   font-size: 12px;
   margin-bottom: 10px;
   text-decoration: none;
-  color: #FFF;
+  color: $c-page;
   font-weight: bold;
   display: block;
   text-align: center;
@@ -83,8 +89,8 @@ a {
     background-color: #DB4A39!important;
   }
   &.ms {
-    background-color: #000!important;
-  }
+    background-color: $c-text !important;
+ }
 }
 
 .sidebar .soc-btn {
@@ -109,6 +115,20 @@ table.head-wrap {
     padding-left: 0px;
   }
 }
+.header{
+  .content{
+    padding: 0;
+  }
+}
+.lead{
+  h1{
+    padding-top: $basepad;
+  }
+  p {
+    font-size: $basefont * 1.5;
+    padding-bottom: $basepad;
+  }
+}
 
 /* -------------------------------------
         BODY
@@ -131,35 +151,35 @@ table {
 .footer-wrap .container td.content p {
   border-top: 1px solid rgb(215, 215, 215);
   padding-top: 15px;
-  font-size: 10px;
+  font-size: $basefont * 0.7;
   font-weight: bold;
 }
 
 /* -------------------------------------
         TYPOGRAPHY
 ------------------------------------- */
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Roboto Slab", Trebuchet, sans-serif;
+  // font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   line-height: 1.1;
   margin-bottom: 15px;
-  color: #000;
+  color: $c-text;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 60%;
+  font-size: 70%;
   color: #6f6f6f;
   line-height: 0;
   text-transform: none;
 }
 
 h1 {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 44px;
 }
 
 h2 {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 37px;
 }
 
@@ -192,14 +212,11 @@ h6 {
 p, ul {
   margin-bottom: 10px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: $basefont;
   line-height: 1.6;
 }
 
 p {
-  &.lead {
-    font-size: 17px;
-  }
   &.last {
     margin-bottom: 0px;
   }
@@ -262,7 +279,7 @@ ul {
 /* This should also be a block element, so that it will fill 100% of the .container */
 
 .content {
-  padding: 15px;
+  padding: $basepad;
   max-width: $box-width;
   margin: 0 auto;
   display: block;
@@ -279,13 +296,15 @@ ul {
   width: $col-width;
   float: left;
   tr td {
-    padding: 15px;
+    padding: $basepad / 2 0 $basepad / 2 $basepad;
   }
 }
-.span-2{
-  width: $col-width * 2;
+.column-left{
+  width: $col-width * 2 - $basepad;
 }
-
+.column-right{
+  width: $col-width - $basepad;
+}
 .column-wrap {
   padding: 0!important;
   margin: 0 auto;
@@ -297,9 +316,14 @@ ul {
 }
 
 .social .column {
-  width: $col-width;
+  width: $col-width - $basepad;
   min-width: $col-width - 1;
   float: left;
+}
+.social{
+  tr td{
+    padding: 5px;
+  }
 }
 
 /* Be sure to place a .clear element after each set of columns, just to be safe */
