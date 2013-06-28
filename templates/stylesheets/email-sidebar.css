@@ -53,14 +53,14 @@ a {
 /* line 51, ../../sass/email-sidebar.scss */
 p.callout {
   padding: 21px;
-  background-color: #ECF8FF;
+  background-color: #d4e2ed;
   margin-bottom: 21px;
 }
 
 /* line 57, ../../sass/email-sidebar.scss */
 .callout a {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
   color: #6d0008;
 }
 
@@ -134,7 +134,7 @@ table.head-wrap {
 }
 /* line 127, ../../sass/email-sidebar.scss */
 .lead p {
-  font-size: 30px;
+  font-size: 24px;
   padding-bottom: 30px;
 }
 
@@ -384,12 +384,17 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
   }
 
   /* line 354, ../../sass/email-sidebar.scss */
-  div[class="column"] {
+  div[class="column"], .column-left, .column-right {
     width: auto !important;
     float: none !important;
   }
 
   /* line 358, ../../sass/email-sidebar.scss */
+  .column-left, .column-right {
+    padding-right: 30px;
+  }
+
+  /* line 361, ../../sass/email-sidebar.scss */
   table.social div[class="column"] {
     width: auto !important;
   }

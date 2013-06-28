@@ -50,14 +50,14 @@ a {
 
 p.callout {
   padding: $basepad * 0.7;
-  background-color: #ECF8FF;
+  background-color: lighten($c-light, 40);
   margin-bottom: $basepad * 0.7;
 }
 
 .callout a {
   font:{
     weight: bold;
-    size: $basefont * 1.5;
+    size: $basefont * 1.2;
   }
   color: $c-links;
 }
@@ -125,7 +125,7 @@ table.head-wrap {
     padding-top: $basepad;
   }
   p {
-    font-size: $basefont * 1.5;
+    font-size: $basefont * 1.2;
     padding-bottom: $basepad;
   }
 }
@@ -351,9 +351,12 @@ ul {
     background-image: none!important;
     margin-right: 0!important;
   }
-  div[class="column"] {
+  div[class="column"], .column-left, .column-right {
     width: auto!important;
     float: none!important;
+  }
+  .column-left, .column-right{
+    padding-right: $basepad;
   }
   table.social div[class="column"] {
     width: auto!important;
