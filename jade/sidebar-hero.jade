@@ -30,7 +30,7 @@ html
               table(bgcolor=c.bg, cellspacing=0, cellpadding=0)
                 tr
                   td
-                    img(src='http://placehold.it/900x300/')
+                    img(src='http://placehold.it/1000x300/')
           //- td
       // -------- BODY ----------------------------
       table.body-wrap(cellspacing=0, cellpadding=0)
@@ -48,7 +48,7 @@ html
                     //
                        A Real Hero (and a real human being) 
                     p
-                      img(src='http://placehold.it/900x300')
+                      img(src='http://placehold.it/1000x300')
                     //
                        /hero 
                     //
@@ -75,29 +75,9 @@ html
                 table(align='left')
                   tr
                     td
-                      ul.sidebar
-                        li
-                          a
-                            h5 Header Thing »
-                            p Sub-head or something
-                        li
-                          a. Just a Plain Link »
-                        li
-                          a. Just a Plain Link »
-                        li
-                          a. Just a Plain Link »
-                        li
-                          a. Just a Plain Link »
-                        li
-                          a. Just a Plain Link »
-                        li
-                          a. Just a Plain Link »
-                        li
-                          a. Just a Plain Link »
-                        li
-                          a. Just a Plain Link »
-                        li
-                          a.last Just a Plain Link »
+                      h6 Campaign Leadership
+                      //- ============= Include sidebar content ===============
+                      include content/team.jade
                       //social & contact 
                       table.social(bgcolor='', width='100%')
                         tr

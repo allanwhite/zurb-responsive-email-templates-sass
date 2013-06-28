@@ -39,7 +39,7 @@ a {
 .btn {
   text-decoration: none;
   color: $c-page;
-  background-color: adjust-color($c-links, $lightness: 10%, $saturation: 0%);;
+  background-color: adjust-color($c-links, $lightness: 10%, $saturation: 0%);
   padding: 10px 16px;
   font-family: $font-stack-slab;
   font-weight: bold;
@@ -234,6 +234,15 @@ p {
   }
 }
 
+dt{
+  font-weight: bold;
+  color: adjust-color($c-dark, $lightness: 20%, $saturation: -30%);
+  margin: $basepad * 0.6 0 $basepad * 0.2 0;
+}
+dd{
+  line-height: 1.2;
+  margin-bottom: $basepad * 0.3;
+}
 ul {
   li {
     margin-left: 5px;
@@ -308,14 +317,18 @@ ul {
   width: $col-width;
   float: left;
   tr td {
-    padding: $basepad / 2 0 $basepad / 2 $basepad;
+    padding: $basepad / 2 $basepad $basepad / 2 $basepad;
   }
 }
 .column-left{
   width: $col-width * 2 - $basepad;
 }
 .column-right{
+  background-color: adjust-color($c-primary, $lightness: 60%, $saturation: -30%);
   width: $col-width;
+  p{
+    font-size: $basefont * 0.8;
+  }
 }
 .column-wrap {
   padding: 0!important;
