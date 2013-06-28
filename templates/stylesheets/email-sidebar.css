@@ -41,36 +41,40 @@ a {
 .btn {
   text-decoration: none;
   color: white;
-  background-color: #6d0008;
+  background-color: #a0000c;
   padding: 10px 16px;
+  font-family: "Roboto Slab", Georgia, sans-serif;
   font-weight: bold;
+  font-size: 20px;
   margin-right: 10px;
   text-align: center;
   cursor: pointer;
   display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
-/* line 51, ../../sass/email-sidebar.scss */
+/* line 55, ../../sass/email-sidebar.scss */
 p.callout {
   padding: 21px;
   background-color: #d4e2ed;
   margin-bottom: 21px;
 }
 
-/* line 57, ../../sass/email-sidebar.scss */
+/* line 61, ../../sass/email-sidebar.scss */
 .callout a {
   font-weight: bold;
   font-size: 24px;
   color: #6d0008;
 }
 
-/* line 65, ../../sass/email-sidebar.scss */
+/* line 69, ../../sass/email-sidebar.scss */
 table.social {
   /*    padding:15px; */
-  background-color: #ebebeb;
+  background-color: #d4e2ed;
 }
 
-/* line 70, ../../sass/email-sidebar.scss */
+/* line 74, ../../sass/email-sidebar.scss */
 .social .soc-btn {
   padding: 3px 7px;
   font-size: 12px;
@@ -82,24 +86,24 @@ table.social {
   text-align: center;
 }
 
-/* line 82, ../../sass/email-sidebar.scss */
+/* line 86, ../../sass/email-sidebar.scss */
 a.fb {
   background-color: #3b5998 !important;
 }
-/* line 85, ../../sass/email-sidebar.scss */
+/* line 89, ../../sass/email-sidebar.scss */
 a.tw {
   background-color: #1daced !important;
 }
-/* line 88, ../../sass/email-sidebar.scss */
+/* line 92, ../../sass/email-sidebar.scss */
 a.gp {
   background-color: #db4a39 !important;
 }
-/* line 91, ../../sass/email-sidebar.scss */
+/* line 95, ../../sass/email-sidebar.scss */
 a.ms {
   background-color: black !important;
 }
 
-/* line 96, ../../sass/email-sidebar.scss */
+/* line 100, ../../sass/email-sidebar.scss */
 .sidebar .soc-btn {
   display: block;
   width: 100%;
@@ -108,31 +112,31 @@ a.ms {
 /* -------------------------------------
         HEADER
 ------------------------------------- */
-/* line 105, ../../sass/email-sidebar.scss */
+/* line 109, ../../sass/email-sidebar.scss */
 table.head-wrap {
   width: 100%;
 }
 
-/* line 110, ../../sass/email-sidebar.scss */
+/* line 114, ../../sass/email-sidebar.scss */
 .header.container table td.logo {
   padding: 15px;
 }
-/* line 113, ../../sass/email-sidebar.scss */
+/* line 117, ../../sass/email-sidebar.scss */
 .header.container table td.label {
   padding: 15px;
   padding-left: 0px;
 }
 
-/* line 119, ../../sass/email-sidebar.scss */
+/* line 123, ../../sass/email-sidebar.scss */
 .header .content {
   padding: 0;
 }
 
-/* line 124, ../../sass/email-sidebar.scss */
+/* line 128, ../../sass/email-sidebar.scss */
 .lead h1 {
   padding-top: 30px;
 }
-/* line 127, ../../sass/email-sidebar.scss */
+/* line 131, ../../sass/email-sidebar.scss */
 .lead p {
   font-size: 24px;
   padding-bottom: 30px;
@@ -141,11 +145,11 @@ table.head-wrap {
 /* -------------------------------------
         BODY
 ------------------------------------- */
-/* line 138, ../../sass/email-sidebar.scss */
+/* line 142, ../../sass/email-sidebar.scss */
 table.body-wrap {
   width: 100%;
 }
-/* line 141, ../../sass/email-sidebar.scss */
+/* line 145, ../../sass/email-sidebar.scss */
 table.footer-wrap {
   width: 100%;
   clear: both !important;
@@ -154,77 +158,81 @@ table.footer-wrap {
 /* -------------------------------------
         FOOTER
 ------------------------------------- */
-/* line 151, ../../sass/email-sidebar.scss */
+/* line 156, ../../sass/email-sidebar.scss */
+.footer-wrap p, .footer-wrap a {
+  color: #ff2131;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 163, ../../sass/email-sidebar.scss */
 .footer-wrap .container td.content p {
   border-top: 1px solid #d7d7d7;
   padding-top: 15px;
-  font-size: 14px;
-  font-weight: bold;
 }
 
 /* -------------------------------------
         TYPOGRAPHY
 ------------------------------------- */
-/* line 161, ../../sass/email-sidebar.scss */
+/* line 173, ../../sass/email-sidebar.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Slab", Trebuchet, sans-serif;
+  font-family: "Roboto Slab", Georgia, sans-serif;
   line-height: 1.1;
   margin-bottom: 15px;
   color: black;
 }
 
-/* line 169, ../../sass/email-sidebar.scss */
+/* line 181, ../../sass/email-sidebar.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 70%;
-  color: #6f6f6f;
+  color: #193851;
   line-height: 0;
   text-transform: none;
 }
 
-/* line 176, ../../sass/email-sidebar.scss */
+/* line 188, ../../sass/email-sidebar.scss */
 h1 {
   font-weight: 400;
-  font-size: 44px;
+  font-size: 46px;
 }
 
-/* line 181, ../../sass/email-sidebar.scss */
+/* line 193, ../../sass/email-sidebar.scss */
 h2 {
   font-weight: 400;
-  font-size: 37px;
+  font-size: 36px;
 }
 
-/* line 186, ../../sass/email-sidebar.scss */
+/* line 198, ../../sass/email-sidebar.scss */
 h3 {
   font-weight: 500;
-  font-size: 27px;
+  font-size: 32px;
 }
 
-/* line 191, ../../sass/email-sidebar.scss */
+/* line 203, ../../sass/email-sidebar.scss */
 h4 {
   font-weight: 500;
-  font-size: 23px;
-}
-
-/* line 196, ../../sass/email-sidebar.scss */
-h5 {
-  font-weight: 900;
-  font-size: 17px;
-}
-
-/* line 201, ../../sass/email-sidebar.scss */
-h6 {
-  font-weight: 900;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #444;
+  font-size: 28px;
 }
 
 /* line 208, ../../sass/email-sidebar.scss */
+h5 {
+  font-weight: 900;
+  font-size: 28px;
+}
+
+/* line 213, ../../sass/email-sidebar.scss */
+h6 {
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #193851;
+}
+
+/* line 220, ../../sass/email-sidebar.scss */
 .collapse {
   margin: 0 !important;
 }
 
-/* line 212, ../../sass/email-sidebar.scss */
+/* line 224, ../../sass/email-sidebar.scss */
 p, ul {
   margin-bottom: 10px;
   font-weight: normal;
@@ -232,28 +240,28 @@ p, ul {
   line-height: 1.6;
 }
 
-/* line 220, ../../sass/email-sidebar.scss */
+/* line 232, ../../sass/email-sidebar.scss */
 p.last {
   margin-bottom: 0px;
 }
 
-/* line 226, ../../sass/email-sidebar.scss */
+/* line 238, ../../sass/email-sidebar.scss */
 ul li {
   margin-left: 5px;
   list-style-position: inside;
 }
-/* line 230, ../../sass/email-sidebar.scss */
+/* line 242, ../../sass/email-sidebar.scss */
 ul.sidebar {
   background: #ebebeb;
   display: block;
   list-style-type: none;
 }
-/* line 234, ../../sass/email-sidebar.scss */
+/* line 246, ../../sass/email-sidebar.scss */
 ul.sidebar li {
   display: block;
   margin: 0;
 }
-/* line 237, ../../sass/email-sidebar.scss */
+/* line 249, ../../sass/email-sidebar.scss */
 ul.sidebar li a {
   text-decoration: none;
   color: #666;
@@ -267,11 +275,11 @@ ul.sidebar li a {
   display: block;
   margin: 0;
 }
-/* line 249, ../../sass/email-sidebar.scss */
+/* line 261, ../../sass/email-sidebar.scss */
 ul.sidebar li a.last {
   border-bottom-width: 0px;
 }
-/* line 252, ../../sass/email-sidebar.scss */
+/* line 264, ../../sass/email-sidebar.scss */
 ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, ul.sidebar li a h5, ul.sidebar li a h6, ul.sidebar li a p {
   margin-bottom: 0 !important;
 }
@@ -284,7 +292,7 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
         Nuke it from orbit. It's the only way to be sure.
 ------------------------------------------------------ */
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-/* line 271, ../../sass/email-sidebar.scss */
+/* line 283, ../../sass/email-sidebar.scss */
 .container {
   display: block !important;
   max-width: 900px !important;
@@ -294,66 +302,66 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
 }
 
 /* This should also be a block element, so that it will fill 100% of the .container */
-/* line 281, ../../sass/email-sidebar.scss */
+/* line 293, ../../sass/email-sidebar.scss */
 .content {
   padding: 30px;
   max-width: 900px;
   margin: 0 auto;
   display: block;
 }
-/* line 286, ../../sass/email-sidebar.scss */
+/* line 298, ../../sass/email-sidebar.scss */
 .content table {
   width: 100%;
 }
 
 /* Let's make sure tables in the content area are 100% wide */
 /* Odds and ends */
-/* line 295, ../../sass/email-sidebar.scss */
+/* line 307, ../../sass/email-sidebar.scss */
 .column {
   width: 300px;
   float: left;
 }
-/* line 298, ../../sass/email-sidebar.scss */
+/* line 310, ../../sass/email-sidebar.scss */
 .column tr td {
   padding: 15px 0 15px 30px;
 }
 
-/* line 302, ../../sass/email-sidebar.scss */
+/* line 314, ../../sass/email-sidebar.scss */
 .column-left {
   width: 570px;
 }
 
-/* line 305, ../../sass/email-sidebar.scss */
+/* line 317, ../../sass/email-sidebar.scss */
 .column-right {
-  width: 270px;
+  width: 300px;
 }
 
-/* line 308, ../../sass/email-sidebar.scss */
+/* line 320, ../../sass/email-sidebar.scss */
 .column-wrap {
   padding: 0 !important;
   margin: 0 auto;
   max-width: 900px !important;
 }
 
-/* line 314, ../../sass/email-sidebar.scss */
+/* line 326, ../../sass/email-sidebar.scss */
 .column table {
   width: 100%;
 }
 
-/* line 318, ../../sass/email-sidebar.scss */
+/* line 330, ../../sass/email-sidebar.scss */
 .social .column {
   width: 270px;
   min-width: 299px;
   float: left;
 }
 
-/* line 324, ../../sass/email-sidebar.scss */
+/* line 336, ../../sass/email-sidebar.scss */
 .social tr td {
   padding: 5px;
 }
 
 /* Be sure to place a .clear element after each set of columns, just to be safe */
-/* line 331, ../../sass/email-sidebar.scss */
+/* line 343, ../../sass/email-sidebar.scss */
 .clear {
   display: block;
   clear: both;
@@ -375,7 +383,7 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
         Nothing fancy.
 -------------------------------------------- */
 @media only screen and (max-width: 900px) {
-  /* line 348, ../../sass/email-sidebar.scss */
+  /* line 360, ../../sass/email-sidebar.scss */
   a[class="btn"] {
     display: block !important;
     margin-bottom: 10px !important;
@@ -383,18 +391,18 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
     margin-right: 0 !important;
   }
 
-  /* line 354, ../../sass/email-sidebar.scss */
+  /* line 366, ../../sass/email-sidebar.scss */
   div[class="column"], .column-left, .column-right {
     width: auto !important;
     float: none !important;
   }
 
-  /* line 358, ../../sass/email-sidebar.scss */
+  /* line 370, ../../sass/email-sidebar.scss */
   .column-left, .column-right {
     padding-right: 30px;
   }
 
-  /* line 361, ../../sass/email-sidebar.scss */
+  /* line 373, ../../sass/email-sidebar.scss */
   table.social div[class="column"] {
     width: auto !important;
   }

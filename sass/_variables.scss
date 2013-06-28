@@ -40,6 +40,8 @@ $secondary-color:           $theme-color-page-tint; // light, like gray
 $alert-color:               adjust-color($theme-color-compl, $lightness: 10%, $saturation: 40%);
 $success-color:             adjust-color($theme-color-primary, $lightness: 10%, $saturation: 40%);
 
+$font-stack: 			"Roboto", Trebuchet, sans-serif;
+$font-stack-slab:       "Roboto Slab", Georgia, sans-serif;
 
 //
 $fontStackReg:          "MuseoSans", Helvetica, Arial, sans-serif !default;
