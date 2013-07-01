@@ -31,7 +31,7 @@ html
               table(bgcolor=c.bg, cellspacing=0, cellpadding=0)
                 tr
                   td
-                    img(src='http://placehold.it/900x300/')
+                    img(src='../images/ak14-header.jpg')
           //- td
       // -------- BODY ----------------------------
       table.body-wrap(cellspacing=0, cellpadding=0)
@@ -43,13 +43,14 @@ html
               table
                 tr
                   td
-                    h1 Greetings, programs!
+                    h1
+                      singleline(label="Main Title") Featured Item Title
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
                     //
                        A Real Hero (and a real human being) 
                     p
-                      img(src='http://placehold.it/900x360')
+                      <img src="http://placehold.it/900x360" editable width="900" label="Featured Image" />
                     //
                        /hero 
                     //
