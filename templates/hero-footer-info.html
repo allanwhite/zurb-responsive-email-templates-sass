@@ -26,8 +26,8 @@
           <td></td>
           <td bgcolor="#fff" class="container">
             <!-- content -->
-            <div class="content lead">
-              <table>
+            <div class="content">
+              <table class="lead">
                 <tr>
                   <td>
                     <h1>
@@ -38,7 +38,7 @@
                 <tr> 
                   <td>
                      
-                    <img src="../images/featured-image-placeholder.png" editable width="900" label="Featured Image" class="lead" /><!--
+                    <img src="../images/featured-image-placeholder.png" editable width="800" label="Featured Image" class="lead" /><!--
                     <Callout>Panel </Callout>-->
                     <div class="callout"><multiline label='Main Feature Intro'>Feature call-to-action. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</multiline>
                       <singleline label="CTA Button"><a class="btn">Click Here »</a></singleline>
@@ -49,16 +49,14 @@
               </table>
               <repeater>
                 <layout label="Article, side image">
-                  <div class="content">
+                  <div class="column-wrap article">
                     <h2>
                       <singleline label="Article Title" repeatertitle="Featured Item Title">Article Title, it could be longish, or even longer than previously thought</singleline>
                     </h2>
-                  </div>
-                  <div class="column-wrap">
                     <div class="column column-right">
                       <table align="left">
                         <tr>
-                          <td><img src="../images/featured-image-placeholder.png" editable width="200" label="Article Image" class="article" /></td>
+                          <td><img src="../images/featured-image-placeholder.png" editable width="800" label="Article Image" /></td>
                         </tr>
                       </table>
                     </div>
@@ -80,7 +78,7 @@
                 </layout>
               </repeater>
               <repeater>
-                <layout label="Article Layout">
+                <layout label="Article, full-width">
                   <table align="left">
                     <tr>
                       <td>

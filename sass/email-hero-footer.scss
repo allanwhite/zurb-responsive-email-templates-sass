@@ -163,7 +163,9 @@ table {
     clear: both!important;
   }
 }
-
+.article{
+  
+}
 /* -------------------------------------
         FOOTER
 ------------------------------------- */
@@ -349,9 +351,6 @@ ul {
     // padding: $basepad / 2 $basepad $basepad / 2 $basepad;
   }
 }
-.column-left{
-  width: $col-width * 2 - $basepad;
-}
 .column-right{
   // background-color: adjust-color($c-primary, $lightness: 60%, $saturation: -30%);
   width: $col-width - $basepad;
@@ -362,6 +361,10 @@ ul {
     font-size: $basefont * 0.9;
   }
 }
+.column-left{
+  width: $col-width * 2 - $basepad;
+}
+
 .column-wrap {
   padding: 0!important;
   margin: 0 auto;

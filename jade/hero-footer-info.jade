@@ -10,6 +10,7 @@
   $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
   $theme-color-links:         adjust-color($theme-color-compl, $lightness: 5%, $saturation: 20%); // 
 c = {primary: '#1e5a82', light: '#4980ac', med: '#71bcf6', dark: '#193851', text: '#000', page: '#fff', links: '#6d0008', header: '#fff', bg: '#31373b'}
+boxwidth = "800"
 //- c.page = 
 
 !!! transitional
@@ -39,8 +40,8 @@ html
           td
           td.container(bgcolor=c.page)
             // content 
-            .content.lead
-              table
+            .content
+              table.lead
                 tr
                   td
                     h1
@@ -48,7 +49,7 @@ html
                     <multiline label='Main Feature Intro'>Main feature introduction. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</multiline>
                 tr  
                   td  
-                    <img src="../images/featured-image-placeholder.png" editable width="900" label="Featured Image" class="lead" />
+                    <img src="../images/featured-image-placeholder.png" editable width="#{boxwidth}" label="Featured Image" class="lead" />
                     //
                        Callout Panel 
                     .callout
@@ -59,15 +60,14 @@ html
                     //Callout Panel 
               repeater
                 layout(label="Article, side image")
-                  .content
+                  .column-wrap.article
                     h2
                       singleline(label="Article Title", repeatertitle="Featured Item Title") Article Title, it could be longish, or even longer than previously thought
-                  .column-wrap
                     .column.column-right
                       table(align="left")
                         tr
                           td
-                            <img src="../images/featured-image-placeholder.png" editable width="200" label="Article Image" class="article" />
+                            <img src="../images/featured-image-placeholder.png" editable width="#{boxwidth}" label="Article Image" />
                     .column.column-left
                       table(align='left')
                         tr
@@ -79,7 +79,7 @@ html
                           td
                             .spacer
               repeater
-                layout(label="Article Layout")
+                layout(label="Article, full-width")
                   table(align='left')
                     tr
                       td
