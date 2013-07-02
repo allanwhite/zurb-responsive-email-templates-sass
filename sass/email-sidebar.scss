@@ -8,8 +8,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: $font-stack;
-  font-size: $basefont;
+  // ========== these are only commented out for local testing. 
+  // font-family: $font-stack;
+  // font-size: $basefont;
 }
 
 img {
@@ -26,6 +27,8 @@ body {
   -webkit-text-size-adjust: none;
   width: 100% !important;
   height: 100%;
+  font-family: $font-stack;
+  font-size: $basefont;
 }
 
 /* -------------------------------------
@@ -40,6 +43,7 @@ a {
   text-decoration: none;
   color: $c-page;
   background-color: adjust-color($c-links, $lightness: 10%, $saturation: 0%);
+  margin-top: $basepad / 2;
   padding: 10px 16px;
   font-family: $font-stack-slab;
   font-weight: bold;
@@ -48,11 +52,12 @@ a {
   text-align: center;
   cursor: pointer;
   display: inline-block;
+  // width: auto;
   text-transform: uppercase;
   letter-spacing: $basefont * 0.2;
 }
 
-p.callout {
+.callout, singleline .callout {
   padding: $basepad * 0.7;
   background-color: lighten($c-light, 40);
   margin-bottom: $basepad * 0.7;
@@ -63,13 +68,13 @@ p.callout {
     weight: bold;
     size: $basefont * 1.2;
   }
-  color: $c-links;
+  color: white; //$c-links;
 }
 
 table.social {
   /*    padding:15px; */
   // background-color: lighten($c-light, 40);
-  
+
 }
 
 .social .soc-btn {
@@ -127,11 +132,14 @@ table.head-wrap {
 }
 .lead{
   h1{
-    padding-top: $basepad;
+    padding-top: $basepad / 2;
   }
-  p {
+  p, multiline {
     font-size: $basefont * 1.2;
     padding-bottom: $basepad;
+  }
+  img{
+    padding-top: $basepad;
   }
 }
 
@@ -177,13 +185,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin-bottom: 15px;
   color: $c-text;
-}
-
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 70%;
-  color: $c-dark;
-  line-height: 0;
-  text-transform: none;
+  small{
+    font-size: 70%;
+    color: $c-dark;
+    line-height: 0;
+    text-transform: none;
+  }
 }
 
 h1 {
@@ -327,8 +334,11 @@ ul {
 .column-right{
   background-color: adjust-color($c-primary, $lightness: 60%, $saturation: -30%);
   width: $col-width;
-  p{
+  p, dd{
     font-size: $basefont * 0.8;
+  }
+  dt{
+    font-size: $basefont * 0.9;
   }
 }
 .column-wrap {
