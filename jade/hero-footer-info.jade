@@ -1,0 +1,144 @@
+
+//-
+  $theme-color-primary:       #2b4f66; // 
+  $theme-color-primary-light: #4980ac; // pale 
+  $theme-color-med:         adjust-color($theme-color-primary, $lightness: 20%, $saturation: 0%);
+  $theme-color-primary-alt:   #1c5ca0; // deep 
+  $theme-color-alt:           #1B3142; // dark 
+  $theme-color-page:          #fff;// white - used in many variables that need white; will tint everything! 
+  $theme-color-compl:         #a50004; // bright red
+  $theme-color-page-tint:     lighten($theme-color-primary-light, 20%); // darker, close to gray
+  $theme-color-links:         adjust-color($theme-color-compl, $lightness: 5%, $saturation: 20%); // 
+c = {primary: '#1e5a82', light: '#4980ac', med: '#71bcf6', dark: '#193851', text: '#000', page: '#fff', links: '#6d0008', header: '#fff', bg: '#31373b'}
+//- c.page = 
+
+!!! transitional
+html
+  head
+    meta(name='viewport', content='width=device-width')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Love Alaska
+    //- use include below for deployment, so it's in-lined.
+    //- include ../templates/stylesheets/email-hero-footer.css
+    link(rel='stylesheet', type='text/css', href='stylesheets/email-hero-footer.css')
+    body(bgcolor=c.bg, topmargin='0', leftmargin='0', marginheight='0', marginwidth='0')
+      // ------------- HEADER --------------------------
+      table.head-wrap(bgcolor=c.bg, cellspacing=0, cellpadding=0)
+        tr
+          //- td
+          td.header.container
+            .content
+              table(bgcolor=c.bg, cellspacing=0, cellpadding=0)
+                tr
+                  td
+                    img(src='../images/ak14-header-generic.jpg')
+          //- td
+      // -------- BODY ----------------------------
+      table.body-wrap(cellspacing=0, cellpadding=0)
+        tr
+          td
+          td.container(bgcolor=c.page)
+            // content 
+            .content.lead
+              table
+                tr
+                  td
+                    h1
+                      singleline(label="Main Title") Featured Item Title
+                    <multiline label='Main Feature Intro'>Main feature introduction. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</multiline>
+                tr  
+                  td  
+                    <img src="../images/featured-image-placeholder.png" editable width="900" label="Featured Image" class="lead" />
+                    //
+                       Callout Panel 
+                    .callout
+                      <multiline label='Main Feature Intro'>Feature call-to-action. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</multiline>
+                      
+                      singleline(label="CTA Button")
+                        a.btn Click Here »
+                    //Callout Panel 
+              repeater
+                layout(label="Article, side image")
+                  .content
+                    h2
+                      singleline(label="Article Title", repeatertitle="Featured Item Title") Article Title, it could be longish, or even longer than previously thought
+                  .column-wrap
+                    .column.column-right
+                      table(align="left")
+                        tr
+                          td
+                            <img src="../images/featured-image-placeholder.png" editable width="200" label="Article Image" class="article" />
+                    .column.column-left
+                      table(align='left')
+                        tr
+                          td
+                            <multiline label="Article Copy" repeatertitle="Article">Article copy. Lorem ipsum Voluptate officia dolore elit minim velit reprehenderit mollit velit ex aute dolore quis ut voluptate elit tempor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</multiline>
+                            singleline(label="CTA Button")
+                              a.btn Click Here »
+                        tr
+                          td
+                            .spacer
+              repeater
+                layout(label="Article Layout")
+                  table(align='left')
+                    tr
+                      td
+                        h2
+                          singleline(label="Article Title", repeatertitle="Featured Item Title") Article Title, it could be longish, or even longer than previously thought
+                        <multiline label="Article Copy" repeatertitle="Article">Lorem ipsum Voluptate officia dolore elit minim velit reprehenderit mollit velit ex aute dolore quis ut voluptate elit tempor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</multiline>
+                        singleline(label="CTA Button")
+                          a.btn Click Here »
+                    tr
+                      td
+                        .spacer
+                  table(align='left')
+                    tr
+                      td
+                        h3 Stay Connected
+                          p
+                            a(href="", title="Follow Love Alaska on Facebook")
+                              img(src="../images/icon-fb.gif")
+                            a(href="http://twitter.com/LoveAlaska2014", title="Connect on Twitter")
+                              img(src="../images/icon-tw.gif")
+                            a(href="http://linkedin.com/in/LoveAlaska2014", title="Connect on LinkedIn")
+                              img(src="../images/icon-in.gif")
+                            a(href="https://www.youtube.com/user/LoveAlaska2014", title="Watch Videos")
+                              img(src="../images/icon-youtube.gif")
+                            a(href="http://lovealaska.org", title="Visit lovealaska.org")
+                              img(src="../images/icon-web.gif")
+                        h4 Love Alaska
+                          p PO Box 241344
+                            br
+                            | Anchorage, AK 99524
+                            br 
+                            | 907.646.4805
+              .clear
+            //COLUMN WRAP 
+          td
+      //
+         FOOTER 
+      table.footer-wrap
+        tr
+          td
+          td.container
+            .content.nopad
+                h3 Campaign Leadership          
+            .column-wrap
+              include content/team-3col.jade
+            .content
+              table
+                tr
+                  td(align='center')
+                    p
+                      //- a(href='#') Terms
+                      //- |  | 
+                      //- a(href='#') Privacy
+                      //- |  | 
+                      //- a(href='#')
+                      unsubscribe Unsubscribe
+                      |  | 
+                      a(href="http://lovealaska.org", title="Love Alaska Website")
+                        | lovealaska.org
+            //content 
+          td
+      //FOOTER 

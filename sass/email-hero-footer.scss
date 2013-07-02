@@ -1,6 +1,7 @@
-$box-width: 900px;
+$box-width: 800px;
 $col-width: $box-width / 3;
 $two-col-width: $col-width * 2;
+
 
 @import "_variables";
 // @import "_fonts";
@@ -344,15 +345,16 @@ ul {
   width: $col-width;
   float: left;
   tr td {
-    padding: $basepad / 2 $basepad $basepad / 2 $basepad;
+    padding: 0;
+    // padding: $basepad / 2 $basepad $basepad / 2 $basepad;
   }
 }
 .column-left{
   width: $col-width * 2 - $basepad;
 }
 .column-right{
-  background-color: adjust-color($c-primary, $lightness: 60%, $saturation: -30%);
-  width: $col-width;
+  // background-color: adjust-color($c-primary, $lightness: 60%, $saturation: -30%);
+  width: $col-width - $basepad;
   p, dd{
     font-size: $basefont * 0.8;
   }
