@@ -66,14 +66,16 @@ html
                       tr
                         td
                           h2
-                            singleline(label="Article Title") Article Title
-                          <multiline label='Article Copy'>Feature call-to-action. Lorem ipsum Voluptate officia dolore elit minim velit reprehenderit mollit velit ex aute dolore quis ut voluptate elit tempor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</multiline>
+                            singleline(label="Article Title", repeatertitle="Featured Item Title") Article Title
+                          <multiline label="Article Copy" repeatertitle="Article">Feature call-to-action. Lorem ipsum Voluptate officia dolore elit minim velit reprehenderit mollit velit ex aute dolore quis ut voluptate elit tempor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</multiline>
                           singleline(label="CTA Button")
                             a.btn Click Here »
+                      tr
+                        td
+                          .spacer
                     table(align='left')
                       tr
                         td
-                          hr
                           h3 Stay Connected
                             p
                               a(href="", title="Follow Love Alaska on Facebook")
@@ -86,6 +88,14 @@ html
                                 img(src="../images/icon-youtube.gif")
                               a(href="http://lovealaska.org", title="Visit lovealaska.org")
                                 img(src="../images/icon-web.gif")
+                          h4 Love Alaska
+                            p PO Box 241344
+                              br
+                              | Anchorage, AK 99524
+                              br 
+                              | 907.646.4805
+
+
                 //- social & contact 
                 //- table.social(bgcolor='', width='100%')
                 //-   tr
@@ -128,12 +138,15 @@ html
                 tr
                   td(align='center')
                     p
-                      a(href='#') Terms
+                      //- a(href='#') Terms
+                      //- |  | 
+                      //- a(href='#') Privacy
+                      //- |  | 
+                      //- a(href='#')
+                      unsubscribe Unsubscribe
                       |  | 
-                      a(href='#') Privacy
-                      |  | 
-                      a(href='#')
-                        unsubscribe Unsubscribe
+                      a(href="http://lovealaska.org", title="Love Alaska Website")
+                        | lovealaska.org
             //content 
           td
       //FOOTER 

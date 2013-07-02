@@ -76,7 +76,9 @@ table.social {
   // background-color: lighten($c-light, 40);
 
 }
-
+.spacer{
+  margin: $basepad;
+}
 .social .soc-btn {
   padding: 3px 7px;
   font-size: 12px;
